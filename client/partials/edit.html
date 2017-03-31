@@ -1,0 +1,11 @@
+<div ng-controller='friendsController'>
+    <p>Name and Date of Birth </p>
+    <p>     {{friend.data.firstname}} {{friend.data.lastname}} {{friend.data.dob | date}}</p>
+    <form ng-submit='updateFriend()'>
+        <input type='hidden' ng-model='newbie.id' ng-bind={{friend.data._id}}>
+        First Name: <input type='text' ng-model='newbie.firstname'>
+        Last Name: <input type='text' ng-model='newbie.lastname'>
+        DOB: <input type='date' ng-model='newbie.dob'>
+        <input type='submit'>
+    </form>
+</div>

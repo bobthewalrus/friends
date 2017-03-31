@@ -1,0 +1,21 @@
+<p>Friends go here</p>
+<div ng-controller='friendsController'>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Show</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+        <tr ng-repeat='friend in friends'>
+                <td>{{friend.firstname}} {{friend.lastname}} </td>
+                <td><a href='#!/showfriend/{{friend._id}}'> Show</a>
+                <a href='#!/edit/{{friend._id}}'>Edit</a>
+                <button ng-click='delete(friend)'>Delete</button>
+                </td>
+
+            </tr>
+        </div>
+    </table>
+
+</div>

@@ -1,0 +1,9 @@
+<div ng-controller='friendsController'>
+    <div ng-repeat = "error in errors" ng-bind="error.message"></div>
+    <form ng-submit='createFriend()' method='POST'>
+        First Name: <input type='text' ng-model='newbie.firstname'>
+        Last Name: <input type='text' ng-model='newbie.lastname'>
+        DOB: <input type='date' ng-model='newbie.dob'>
+        <input type='submit'>
+    </form>
+</div>
